@@ -1,43 +1,53 @@
 @import './src/styles/colors';
-@import './src/styles/variables';
 
-.header {
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: $default-bg;
-  top: 0;
-  position: fixed;
-  width: 100%;
-}
+.navbar-container {
+  justify-content: start !important;
+  box-shadow: 0 8px 0 -2px #efefef;
+  padding: 0.5rem 0;
 
-.header ul {
-  list-style: none;
-  display: flex;
-}
+  .navbar-brand {
+    margin: 0 3rem;
 
-.header a {
-  color: $default-font;
-  font-weight: bold;
-  text-decoration: none;
-}
+    img {
+      width: 4rem;
+    }
+  }
 
-.header li {
-  margin-left: 3rem;
-}
+  .search {
+    width: 30%;
+  }
 
-.header a:hover,
-.header a:active,
-.header a.active {
-  color: $default-font-hover;
-}
+  .searchIcon {
+    position: absolute;
+    margin: 11px;
+  }
 
-.logo {
-  width: 4rem;
-  margin-left: $navbar-margin;
-}
+  .searchInput {
+    padding-left: 40px;
+    border-radius: 3rem;
+    background-color: $input-bg;
+  }
 
-.navigations {
-  margin-right: $navbar-margin;
+  .navigations {
+    margin: 0 3rem;
+  }
+
+  .navLink {
+    margin-left: 1rem;
+    color: $heading-text !important;
+    font-weight: 700;
+
+    &.signIn {
+      color: white !important;
+      background-color: $default-black;
+      padding: 6px 1rem;
+      border-radius: 3rem;
+    }
+
+    &.signOut {
+      background-color: $default-green;
+      padding: 6px 1rem;
+      border-radius: 3rem;
+    }
+  }
 }
