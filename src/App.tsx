@@ -1,12 +1,20 @@
-import React from 'react';
-import './App.scss';
+import React from 'react'
+import {BrowserRouter} from 'react-router-dom'
 
-function App() {
+import {AppRoutes} from './AppRoutes'
+import {NavBar} from './components/shared/navbar/NavBar'
+import {Layout} from './components/shared/Layout/Layout'
+import {AppContextProvider} from './context/app-context';
+
+export const App: React.FC = () => {
   return (
-    <div className="App">
-
-    </div>
-  );
+      <BrowserRouter>
+        <AppContextProvider>
+          <NavBar/>
+          <Layout>
+            <AppRoutes/>
+          </Layout>
+        </AppContextProvider>
+      </BrowserRouter>
+  )
 }
-
-export default App;

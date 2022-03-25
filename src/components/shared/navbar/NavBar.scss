@@ -1,0 +1,43 @@
+@import './src/styles/colors';
+@import './src/styles/variables';
+
+.header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $default-bg;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+}
+
+.header a {
+  color: $default-font;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.header li {
+  margin-left: 3rem;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  color: $default-font-hover;
+}
+
+.logo {
+  width: 4rem;
+  margin-left: $navbar-margin;
+}
+
+.navigations {
+  margin-right: $navbar-margin;
+}
