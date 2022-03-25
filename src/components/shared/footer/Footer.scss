@@ -1,0 +1,15 @@
+@import './src/styles/colors';
+
+.footer-container {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: #292970;
+  max-height: 200px;
+  padding: 1rem 2rem 0;
+  font-size: 10px;
+
+  img {
+    width: 4rem;
+  }
+}
