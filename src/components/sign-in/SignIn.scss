@@ -1,12 +1,14 @@
 @import './src/styles/colors';
 
-.input {
-  border-radius: 3rem;
-  background-color: $input-bg;
-}
+.sign-in-container {
+  .input {
+    border-radius: 3rem;
+    background-color: $input-bg;
+  }
 
-.submitBtn {
-  width: 100%;
-  border-radius: 3rem;
-  background-color: $default-green;
+  .submitBtn {
+    width: 100%;
+    border-radius: 3rem;
+    background-color: $default-green;
+  }
 }
