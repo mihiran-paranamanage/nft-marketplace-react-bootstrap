@@ -1,14 +1,14 @@
 @import './src/styles/colors';
 
-.sign-in-container {
+.sign-in {
+  min-height: 20rem;
+
   .input {
     border-radius: 3rem;
-    background-color: $input-bg;
+    background-color: $light-gray;
   }
 
-  .submitBtn {
-    width: 100%;
-    border-radius: 3rem;
-    background-color: $default-green;
+  > div {
+    min-width: 30%;
   }
 }

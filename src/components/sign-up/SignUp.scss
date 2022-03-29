@@ -1,8 +1,7 @@
-@import './src/styles/colors';
+.sign-up {
+  min-height: 20rem;
 
-.sign-up-container {
-  .btn {
-    border-radius: 3rem;
-    background-color: $default-green;
+  > div {
+    min-width: 30%;
   }
 }

@@ -2,8 +2,14 @@
 
 .primary-btn {
   background-color: $green;
+  border: 1px solid $green;
   padding: 6px 1rem;
   border-radius: 3rem;
-  border: 1px solid $green;
   font-weight: 600;
+
+  &.black {
+    color: white;
+    background-color: $black;
+    border: 1px solid $black;
+  }
 }

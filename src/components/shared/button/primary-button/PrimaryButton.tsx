@@ -4,13 +4,14 @@ import './PrimaryButton.scss';
 
 export interface ButtonProps {
     color?: string;
-    bgColor?: string;
+    width?: string;
 }
 
 export const PrimaryButton: React.FC<ButtonProps> = (props) => {
+    const className = `primary-btn ${props.color}`
     return (
-        <button className="primary-btn"
-                style={{color: props.color, backgroundColor: props.bgColor}}>
+        <button className={className}
+                style={{width: props.width}}>
             {props.children}
         </button>
     )
