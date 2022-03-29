@@ -7,6 +7,7 @@ import {Activity} from './components/activity/Activity';
 import {Academy} from './components/academy/Academy';
 import {Blog} from './components/blog/Blog';
 import {SignUp} from './components/sign-up/SignUp';
+import {LandingPage} from './components/landing-page/LandingPage';
 
 export const AppRoutes: React.FC = () => {
     return (
@@ -17,6 +18,7 @@ export const AppRoutes: React.FC = () => {
             <Route path='blog' element={<Blog/>}/>
             <Route path='sign-in' element={<SignIn/>}/>
             <Route path='sign-up' element={<SignUp/>}/>
+            <Route path='' element={<LandingPage/>}/>
         </Routes>
     );
 }
