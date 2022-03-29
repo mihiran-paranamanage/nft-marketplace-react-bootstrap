@@ -2,18 +2,24 @@ import React from 'react';
 import {Container} from 'react-bootstrap';
 import {SocialIcon} from 'react-social-icons';
 
-import './Footer.scss'
+import './Footer.scss';
 
 export const Footer: React.FC = () => {
     return (
-        <footer>
-            <Container fluid className="footer-container">
-                <div className="row">
-                    <div className="col-md-4 p-3">
+        <footer className="footer">
+            <Container fluid>
+                <div className="row p-3">
+                    <div className="col-md-5">
                         <img src={require('../../../assets/navbar-logo.png')} alt="Logo"/>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            <br/>
+                            Lorem Ipsum has been the industry's standard dummy text.
+                            <br/>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        </p>
                     </div>
-                    <div className="col-md-2 p-3">
+                    <div className="col-md-2">
                         <h6>Menu</h6>
                         <ul className="list-unstyled">
                             <li>Link 1</li>
@@ -21,7 +27,7 @@ export const Footer: React.FC = () => {
                             <li>Link 3</li>
                         </ul>
                     </div>
-                    <div className="col-md-2 p-3">
+                    <div className="col-md-2">
                         <h6>My Account</h6>
                         <ul className="list-unstyled">
                             <li>Link 1</li>
@@ -29,7 +35,7 @@ export const Footer: React.FC = () => {
                             <li>Link 3</li>
                         </ul>
                     </div>
-                    <div className="col-md-4 p-3">
+                    <div className="col-md-3 ms-auto">
                         <h6>Trending in all categories</h6>
                         <div className="d-flex">
                             <SocialIcon className="me-2" url="https://facebook.com/jaketrent" />

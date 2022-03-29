@@ -1,13 +1,14 @@
 @import './src/styles/colors';
 
-.footer-container {
+.footer {
   position: absolute;
   bottom: 0;
   color: white;
-  background-color: #292970;
+  background-color: $dark-blue;
   max-height: 200px;
   padding: 1rem 2rem 0;
-  font-size: 10px;
+  font-size: 11px;
+  width: 100%;
 
   img {
     width: 4rem;
