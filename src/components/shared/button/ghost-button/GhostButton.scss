@@ -1,0 +1,10 @@
+@import '../../../../styles/colors';
+
+.ghost-btn {
+  color: $black;
+  background-color: white;
+  border: 1px solid $black;
+  padding: 6px 1rem;
+  border-radius: 3rem;
+  font-weight: 600;
+}

@@ -1,0 +1,9 @@
+@import '../../../../styles/colors';
+
+.primary-btn {
+  background-color: $green;
+  padding: 6px 1rem;
+  border-radius: 3rem;
+  border: 1px solid $green;
+  font-weight: 600;
+}

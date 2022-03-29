@@ -1,24 +1,7 @@
 @import './src/styles/colors';
 
-.card {
-  box-shadow: 0 0 2rem #efefef;
-  padding: 1rem;
-  max-width: 16rem;
-}
-
-.btn {
-  &.explore {
-    color: $default-black !important;
-    background-color: white;
-    border: 1px solid $default-black;
-    padding: 6px 1rem;
-    border-radius: 3rem;
-  }
-
-  &.create {
-    background-color: $default-green;
-    padding: 6px 1rem;
-    border-radius: 3rem;
+.landing-page {
+  .primary-btn {
     margin-left: 1rem;
   }
 }
