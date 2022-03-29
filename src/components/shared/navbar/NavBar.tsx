@@ -29,7 +29,7 @@ export const NavBar: React.FC = () => {
                             <Nav.Link className="navLink" href='/academy'>Academy</Nav.Link>
                             <Nav.Link className="navLink" href='/blog'>Blog</Nav.Link>
                             <Nav.Link className="navLink signIn" href='/sign-in'>Sign in</Nav.Link>
-                            <Nav.Link className="navLink signOut" href='/sign-up'>Create</Nav.Link>
+                            <Nav.Link className="navLink create" href='/sign-up'>Create</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
