@@ -1,12 +1,11 @@
 @import './src/styles/colors';
 
 .footer {
-  position: absolute;
   bottom: 0;
   color: white;
   background-color: $dark-blue;
   max-height: 200px;
-  padding: 1rem 2rem 0;
+  padding: 1rem 2rem;
   font-size: 11px;
   width: 100%;
 

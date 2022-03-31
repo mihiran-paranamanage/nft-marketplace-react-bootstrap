@@ -1,0 +1,15 @@
+.collection-carousel {
+  height: 26rem;
+
+  .carousel-inner, .carousel-item {
+    height: 100%;
+  }
+
+  .carousel-caption {
+    bottom: 20%;
+  }
+
+  .collection-card {
+    margin-right: 20px;
+  }
+}

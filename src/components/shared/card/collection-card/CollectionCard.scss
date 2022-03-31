@@ -1,0 +1,40 @@
+@import './src/styles/colors';
+
+.collection-card {
+  width: 15rem;
+  height: 18rem;
+  border-radius: 1rem;
+  padding: 1px;
+  box-shadow: 0 0 2rem #cdc8c8;
+
+  .card-body {
+    text-align: left;
+    font-size: 12px;
+
+    .card-img-cover {
+      max-height: 7rem;
+      object-fit: cover;
+    }
+
+    .card-img-dp {
+      position: absolute;
+      max-width: 40%;
+      border-radius: 3rem;
+      left: 30%;
+      top: 30%;
+      border: 3px solid white;
+    }
+
+    .card-content {
+      margin-top: 4rem;
+
+      .content-title {
+        font-weight: 700;
+      }
+
+      .user-name {
+        color: $light-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.live-card {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-shadow: 0 0 2rem #cdc8c8;
+
+  .card-body {
+    text-align: left;
+
+    .ghost-btn {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}
