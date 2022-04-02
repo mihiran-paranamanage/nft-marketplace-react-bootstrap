@@ -1,0 +1,27 @@
+@import './src/styles/colors';
+
+.top-category-card {
+  .card {
+    border: none;
+  }
+
+  .card-body {
+    display: flex;
+    background-color: $light-gray;
+    border-radius: 1rem;
+
+    .card-img-sm {
+      max-width: 4rem;
+      border-radius: 2rem;
+    }
+
+    .gain {
+      color: $green;
+      font-weight: 600;
+    }
+
+    .index {
+      font-weight: 600;
+    }
+  }
+}
