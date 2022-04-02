@@ -15,4 +15,20 @@
       padding: 0 30px 0 0;
     }
   }
+
+  .process {
+    background-color: $light-gray;
+  }
+
+  .join-section {
+    margin-top: 12rem;
+    margin-bottom: 16rem;
+  }
+
+  .why-section {
+    border: 1px solid $black;
+    border-radius: 2rem;
+    margin: -4rem auto 6rem auto;
+    background-color: white;
+  }
 }
