@@ -51,16 +51,16 @@ export const LandingPage: React.FC = (props) => {
             <h5 className="mt-5 mb-3 d-flex top-category-title">
                 Top
                 <span className="mx-2">
-                        <Form.Select size="lg">
-                          <option>Sellers</option>
-                        </Form.Select>
-                    </span>
+                    <Form.Select size="lg">
+                      <option>Sellers</option>
+                    </Form.Select>
+                </span>
                 in
                 <span className="mx-2">
-                        <Form.Select size="lg">
-                          <option>1 day</option>
-                        </Form.Select>
-                    </span>
+                    <Form.Select size="lg">
+                      <option>1 day</option>
+                    </Form.Select>
+                </span>
             </h5>
             <div className="d-flex row">
                 <div className="col-6">
@@ -166,7 +166,46 @@ export const LandingPage: React.FC = (props) => {
                 </div>
             </div>
 
-            <div></div>
+            <div className="unlock-section text-center mt-5">
+                <h2 className="mb-5">Calling all creators!</h2>
+                <p className="w-25 mx-auto mb-5">Learn about the secret and exclusive
+                    benefits we have for our first 100
+                    collections.
+                </p>
+                <PrimaryButton color="red">Unlock now!</PrimaryButton>
+            </div>
+
+            <h5 className="mt-5 mb-3 d-flex trending-title">
+                Trending in
+                <span className="mx-2">
+                    <Form.Select size="lg">
+                      <option>All categories</option>
+                    </Form.Select>
+                </span>
+            </h5>
+            <CollectionCarousel/>
+
+            <div className="waitlist row mt-5 p-3">
+                <div className="col-8 my-auto ps-4">
+                    <h3>Stay up to date!</h3>
+                    <p className="w-50">
+                        Join our waitlist to get early access to exclusive drops as soon as we set
+                        sail! Join our waitlist to get early access to exclusive drops as soon as we
+                        set sail!
+                    </p>
+                    <div className="d-flex w-50 justify-content-between">
+                        <Form className="input-form">
+                            <Form.Group className="mb-3" controlId="email">
+                                <Form.Control className="input" type="email" placeholder="Your email address" />
+                            </Form.Group>
+                        </Form>
+                        <PrimaryButton>Subscribe</PrimaryButton>
+                    </div>
+                </div>
+                <div className="col-4">
+                    <img className="mb-3" src={require('../../../src/assets/process-sample.png')} alt="img" />
+                </div>
+            </div>
         </div>
     )
 }
