@@ -1,0 +1,31 @@
+@import './src/styles/colors';
+
+.collection-left-panel {
+  background-color: $light-gray;
+  font-weight: 600;
+  padding: 1rem;
+  width: 20%;
+
+  hr {
+    opacity: 1;
+    height: 2px;
+  }
+
+  .categories,
+  .artist-search,
+  .artists {
+    margin-left: 1rem;
+  }
+
+  .price-range {
+    .min, .max {
+      width: 30%;
+      margin: 0 1rem;
+
+      input {
+        border-radius: 2rem;
+        text-align: center;
+      }
+    }
+  }
+}

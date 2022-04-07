@@ -6,6 +6,7 @@ import './NavBar.scss';
 
 import {PrimaryButton} from '../button/primary-button/PrimaryButton';
 import {Link} from 'react-router-dom';
+import {SearchInput} from '../search-input/SearchInput';
 
 export const NavBar: React.FC = () => {
     return (
@@ -17,12 +18,7 @@ export const NavBar: React.FC = () => {
                     </Link>
                 </Navbar.Brand>
                 <Form className="search d-flex">
-                    <BsSearch className="searchIcon"/>
-                    <FormControl
-                        className="searchInput"
-                        type="search"
-                        placeholder="Search for items, collections, creators..."
-                        aria-label="Search"/>
+                    <SearchInput placeholder="Search for items, collections, creators..." />
                 </Form>
                 <Navbar.Toggle className="ms-auto" aria-controls="navbarScroll" />
                 <div className="mx-5 ms-lg-auto">

@@ -8,10 +8,16 @@ import {Academy} from './components/academy/Academy';
 import {Blog} from './components/blog/Blog';
 import {SignUp} from './components/sign-up/SignUp';
 import {LandingPage} from './components/landing-page/LandingPage';
+import {CollectionList} from './components/collection-list/CollectionList';
+import {Collection} from './components/collection/Collection';
 
 export const AppRoutes: React.FC = () => {
     return (
         <Routes>
+            <Route path='collection'>
+                <Route path='list' element={<CollectionList/>}/>
+                <Route path=':id' element={<Collection/>}/>
+            </Route>
             <Route path='explore' element={<Explore/>}/>
             <Route path='activity' element={<Activity/>}/>
             <Route path='academy' element={<Academy/>}/>

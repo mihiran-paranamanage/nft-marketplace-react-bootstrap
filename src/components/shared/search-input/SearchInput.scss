@@ -1,0 +1,15 @@
+@import './src/styles/colors';
+
+.search-input {
+  width: 100%;
+
+  .search-icon {
+    position: absolute;
+    margin: 11px;
+  }
+
+  input {
+    border-radius: 3rem;
+    padding-left: 40px;
+  }
+}
