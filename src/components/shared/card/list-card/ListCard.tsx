@@ -1,7 +1,7 @@
 import React from 'react';
 import {Card} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faHeart} from '@fortawesome/free-solid-svg-icons'
+import {faHeart, faDiamond} from '@fortawesome/free-solid-svg-icons'
 
 import './ListCard.scss';
 
@@ -21,7 +21,10 @@ export const ListCard: React.FC = (props) => {
                     </div>
                     <div className="ms-auto text-end">
                         <div>Price status</div>
-                        <div className="gain">+ 0.17</div>
+                        <div>
+                            <FontAwesomeIcon icon={faDiamond} size="xs" />
+                            <span className="ms-2">0.17</span>
+                        </div>
                         <div className="owner">Owner</div>
                     </div>
                 </div>

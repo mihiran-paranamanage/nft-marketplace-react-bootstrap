@@ -13,7 +13,7 @@ export const CollectionLeftPanel: React.FC = (props) => {
     const handleClose = () => setShow(false);
     const toggleShow = () => setShow((s: boolean) => !s);
 
-    const offCanvasOptions = {scroll: false, backdrop: false};
+    const offCanvasOptions = {scroll: true, backdrop: false};
     const categories = [
         {id: '1', name: 'Sports'},
         {id: '2', name: 'Events'},
