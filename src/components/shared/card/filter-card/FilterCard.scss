@@ -1,0 +1,15 @@
+@import './src/styles/colors';
+
+.filter-card {
+
+  .card {
+    width: 12rem;
+    border-radius: 3rem;
+
+    .card-img-xs {
+      max-width: 3rem;
+      max-height: 3rem;
+      border-radius: 2rem;
+    }
+  }
+}

@@ -1,7 +1,5 @@
-import React, {useState} from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAngleLeft, faAngleDown} from '@fortawesome/free-solid-svg-icons'
-import {Form, Offcanvas} from 'react-bootstrap';
+import React from 'react';
+import {Form} from 'react-bootstrap';
 import {BsSearch} from 'react-icons/bs';
 
 import './SearchInput.scss';
