@@ -1,2 +1,29 @@
 @import './src/styles/colors';
 
+.collection {
+
+  .light-blue {
+    color: $light-blue;
+  }
+
+  .card {
+    border-radius: 1rem;
+
+    .card-img-md {
+      max-width: 8rem;
+      border-radius: 4rem;
+    }
+  }
+
+  .primary-btn, .ghost-btn {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .properties {
+    .property {
+      border-radius: 1rem;
+      border: 1px solid $black;
+    }
+  }
+}
