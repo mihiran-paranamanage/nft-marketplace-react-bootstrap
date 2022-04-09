@@ -45,10 +45,10 @@ export const LandingPage: React.FC = (props) => {
 
             <LiveCarousel/>
 
-            <h5 className="mt-5">Featured Collection</h5>
+            <h5 className="mt-5 fw-bold">Featured Collection</h5>
             <CollectionCarousel/>
 
-            <h5 className="mt-5 mb-3 d-flex top-category-title">
+            <h5 className="mt-5 mb-3 d-flex top-category-title fw-bold">
                 Top
                 <span className="mx-2">
                     <Form.Select size="lg">
@@ -76,7 +76,7 @@ export const LandingPage: React.FC = (props) => {
             </div>
 
             <div className="process p-5 mt-5">
-                <h5 className="mb-3">The process is simple</h5>
+                <h5 className="mb-3 fw-bold">The process is simple</h5>
                 <div className="row">
                     <div className="col-4 p-3">
                         <img className="mb-3" src={require('../../../src/assets/process-sample.png')} alt="img" />
@@ -175,7 +175,7 @@ export const LandingPage: React.FC = (props) => {
                 <PrimaryButton color="red">Unlock now!</PrimaryButton>
             </div>
 
-            <h5 className="mt-5 mb-3 d-flex trending-title">
+            <h5 className="mt-5 mb-3 d-flex trending-title fw-bold">
                 Trending in
                 <span className="mx-2">
                     <Form.Select size="lg">
