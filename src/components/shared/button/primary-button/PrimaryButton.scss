@@ -18,4 +18,10 @@
     background-color: $light-red;
     border: 1px solid white;
   }
+
+  &.dark-blue {
+    color: white;
+    background-color: $dark-blue;
+    border: $dark-blue;
+  }
 }
