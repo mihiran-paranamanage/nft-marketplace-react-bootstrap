@@ -1,0 +1,9 @@
+@import './src/styles/colors';
+
+.filter-select {
+  .form-select {
+    border-radius: 3rem;
+    border-color: $light-blue;
+    color: $light-blue;
+  }
+}

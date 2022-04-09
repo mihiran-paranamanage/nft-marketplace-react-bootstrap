@@ -153,7 +153,7 @@ export const Collection: React.FC = (props) => {
 
                                     <div className="d-flex ms-auto">
                                         <div className="font-light-blue me-2 fw-bold">All time avg. price</div>
-                                        <div className="d-flex">
+                                        <div>
                                             <FontAwesomeIcon className="mt-1 me-1" icon={faDiamond} size="xs" />
                                             <span className="fw-bold">{'415'}</span>
                                         </div>
@@ -181,7 +181,7 @@ export const Collection: React.FC = (props) => {
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td className="d-flex">
+                                        <td>
                                             <FontAwesomeIcon className="mt-1 me-1" icon={faDiamond} size="xs" />
                                             <span className="fw-bold">{'415'}</span>
                                         </td>
@@ -190,7 +190,7 @@ export const Collection: React.FC = (props) => {
                                         <td className="font-light-blue fw-bold">Lorem Ipsum</td>
                                     </tr>
                                     <tr>
-                                        <td className="d-flex">
+                                        <td>
                                             <FontAwesomeIcon className="mt-1 me-1" icon={faDiamond} size="xs" />
                                             <span className="fw-bold">{'415'}</span>
                                         </td>
@@ -218,12 +218,12 @@ export const Collection: React.FC = (props) => {
                                     </thead>
                                     <tbody>
                                     <tr>
-                                        <td className="d-flex">
+                                        <td>
                                             <FontAwesomeIcon className="mt-1 me-1" icon={faDiamond} size="xs" />
                                             <span className="fw-bold">{'415'}</span>
                                         </td>
                                         <td className="fw-bold">$5,430,211</td>
-                                        <td className="fw-bold d-flex">
+                                        <td className="fw-bold">
                                             <FontAwesomeIcon className="mt-1 me-1" icon={faArrowDown} size="xs" />
                                             <span className="fw-bold">{'100'}%</span>
                                         </td>
@@ -231,12 +231,12 @@ export const Collection: React.FC = (props) => {
                                         <td className="font-light-blue fw-bold">Lorem Ipsum</td>
                                     </tr>
                                     <tr>
-                                        <td className="d-flex">
+                                        <td>
                                             <FontAwesomeIcon className="mt-1 me-1" icon={faDiamond} size="xs" />
                                             <span className="fw-bold">{'415'}</span>
                                         </td>
                                         <td className="fw-bold">$5,430,211</td>
-                                        <td className="fw-bold d-flex">
+                                        <td className="fw-bold">
                                             <FontAwesomeIcon className="mt-1 me-1" icon={faArrowUp} size="xs" />
                                             <span className="fw-bold">{'100'}%</span>
                                         </td>
@@ -282,7 +282,7 @@ export const Collection: React.FC = (props) => {
                             {activities.map((property) => (
                                 <tr>
                                     <td className="fw-bold">Sale</td>
-                                    <td className="d-flex">
+                                    <td>
                                         <FontAwesomeIcon className="mt-1 me-1" icon={faDiamond} size="xs" />
                                         <span className="fw-bold">{'415'}</span>
                                     </td>

@@ -1,0 +1,17 @@
+@import './src/styles/colors';
+
+.collection-table {
+  .filter-select {
+    margin: 0 0.5rem;
+  }
+
+  .table {
+    .gain {
+      color: $green;
+    }
+
+    .loss {
+      color: $red;
+    }
+  }
+}

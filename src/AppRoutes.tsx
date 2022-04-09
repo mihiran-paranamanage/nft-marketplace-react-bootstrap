@@ -10,12 +10,14 @@ import {SignUp} from './components/sign-up/SignUp';
 import {LandingPage} from './components/landing-page/LandingPage';
 import {CollectionList} from './components/collection-list/CollectionList';
 import {Collection} from './components/collection/Collection';
+import {CollectionTable} from './components/collection-table/CollectionTable';
 
 export const AppRoutes: React.FC = () => {
     return (
         <Routes>
             <Route path='collection'>
                 <Route path='list' element={<CollectionList/>}/>
+                <Route path='table' element={<CollectionTable/>}/>
                 <Route path=':id' element={<Collection/>}/>
             </Route>
             <Route path='explore' element={<Explore/>}/>

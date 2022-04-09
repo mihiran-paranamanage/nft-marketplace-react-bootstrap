@@ -1,0 +1,9 @@
+@import './src/styles/colors';
+
+.collection-cell-card {
+  .card-img-xs {
+    max-width: 3rem;
+    max-height: 3rem;
+    border-radius: 2rem;
+  }
+}
