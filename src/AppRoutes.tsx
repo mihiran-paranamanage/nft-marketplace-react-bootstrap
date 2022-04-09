@@ -11,11 +11,13 @@ import {LandingPage} from './components/landing-page/LandingPage';
 import {CollectionList} from './components/collection-list/CollectionList';
 import {Collection} from './components/collection/Collection';
 import {CollectionTable} from './components/collection-table/CollectionTable';
+import {MyCollections} from './components/my-collections/MyCollections';
 
 export const AppRoutes: React.FC = () => {
     return (
         <Routes>
             <Route path='collection'>
+                <Route path='my-collections' element={<MyCollections/>}/>
                 <Route path='list' element={<CollectionList/>}/>
                 <Route path='table' element={<CollectionTable/>}/>
                 <Route path=':id' element={<Collection/>}/>

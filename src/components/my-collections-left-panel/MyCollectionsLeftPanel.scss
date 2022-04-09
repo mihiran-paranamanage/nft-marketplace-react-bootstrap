@@ -1,0 +1,13 @@
+@import './src/styles/colors';
+
+.my-collections-left-panel {
+  background-color: $light-gray;
+  font-weight: 600;
+  padding: 1rem;
+  width: 20%;
+
+  hr {
+    opacity: 1;
+    height: 1px;
+  }
+}
