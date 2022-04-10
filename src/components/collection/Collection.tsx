@@ -49,8 +49,8 @@ export const Collection: React.FC = (props) => {
                 <img src={require('../../assets/nft-sample.png')} alt="Logo"/>
                 <div className="w-50 ms-auto">
                     <div className="w-50">
-                        <h4 className="font-light-blue fw-bold">Collection Name</h4>
-                        <h4 className="fw-bold">NFT Name</h4>
+                        <h3 className="font-light-blue fw-bold">Collection Name</h3>
+                        <h3 className="fw-bold">NFT Name</h3>
                         <p>
                             Join our waitlist to get early access to
                             exclusive drops as soon as we set sail!
@@ -87,10 +87,10 @@ export const Collection: React.FC = (props) => {
 
             <div className="collection-stats">
                 <div className="row">
-                    <div className="col-6">
+                    <div className="col-6 d-flex flex-column justify-content-between">
                         <div className="properties mb-3">
-                            <Card body className="p-3">
-                                <h5 className="mb-3 fw-bold">Properties</h5>
+                            <Card body className="px-3 py-5">
+                                <h5 className="mb-5 fw-bold">Properties</h5>
                                 <div className="d-flex justify-content-between">
                                     {properties.map((property) => (
                                         <div className="w-25 p-1 text-center property">
@@ -104,8 +104,8 @@ export const Collection: React.FC = (props) => {
                         </div>
 
                         <div className="about mb-3">
-                            <Card body className="p-3">
-                                <h5 className="mb-3 fw-bold">About this collection</h5>
+                            <Card body className="px-3 py-5">
+                                <h5 className="mb-5 fw-bold">About this collection</h5>
                                 <div className="d-flex">
                                     <Card.Img className="card-img-md me-2" variant="top" src={require('../../assets/nft-sample.png')} alt="img" />
                                     <div className="w-50 mx-auto">
@@ -123,8 +123,8 @@ export const Collection: React.FC = (props) => {
                         </div>
 
                         <div className="details mb-3">
-                            <Card body className="p-3">
-                                <h5 className="mb-3 fw-bold">Details</h5>
+                            <Card body className="px-3 py-5">
+                                <h5 className="mb-5 fw-bold">Details</h5>
                                 {details.map((detail) => (
                                     <div className="row">
                                         <div className="col-6 fw-bold">
@@ -141,14 +141,14 @@ export const Collection: React.FC = (props) => {
                     <div className="col-6">
                         <div className="price-graph mb-3">
                             <Card body className="p-3">
-                                <div className="d-flex">
-                                    <div className="d-flex">
-                                        <h5 className="mb-3 fw-bold">Price graph</h5>
+                                <div className="d-flex mb-3">
+                                    <div className="d-flex align-items-center">
+                                        <h5 className="fw-bold mb-0">Price graph</h5>
                                         <span className="mx-2">
-                                        <Form.Select className="fw-bold">
-                                          <option>All time</option>
-                                        </Form.Select>
-                                    </span>
+                                            <Form.Select className="fw-bold">
+                                              <option>All time</option>
+                                            </Form.Select>
+                                        </span>
                                     </div>
 
                                     <div className="d-flex ms-auto">
@@ -163,7 +163,6 @@ export const Collection: React.FC = (props) => {
                                 <MDBContainer>
                                     <Line data={priceGraph} />
                                 </MDBContainer>
-
                             </Card>
                         </div>
 
@@ -265,7 +264,7 @@ export const Collection: React.FC = (props) => {
                                 <FilterCard id={filter.id} name={filter.name} showImage={false} />
                             ))}
 
-                            <Link to='' className="text-decoration-none" >Clear all</Link>
+                            <Link to='' className="text-decoration-none fw-bold">Clear all</Link>
                         </div>
                         <hr className='border-0' />
                         <Table responsive>
@@ -298,7 +297,7 @@ export const Collection: React.FC = (props) => {
             </div>
 
             <div className="more">
-                <h4 className="fw-bold">More from this collection</h4>
+                <h3 className="fw-bold">More from this collection</h3>
                 <div className="d-flex row justify-content-between mb-5">
                     <ListCard/>
                     <ListCard/>

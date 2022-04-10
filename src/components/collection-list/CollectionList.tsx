@@ -25,17 +25,17 @@ export const CollectionList: React.FC = (props) => {
                         <FilterCard id={filter.id} name={filter.name} />
                     ))}
 
-                    <Link to='' className="ms-auto text-decoration-none" >Clear all</Link>
+                    <Link to='' className="ms-auto text-decoration-none fw-bold">Clear all</Link>
                 </div>
 
                 <hr/>
 
                 <div className="sort d-flex my-5">
-                    <span className="text-muted fw-bold">{'50,234'} items</span>
+                    <h5 className="text-muted fw-bold">{'50,234'} items</h5>
                     <div className="ms-auto d-flex">
-                        <span className="text-muted fw-bold">Sort by</span>
+                        <h5 className="text-muted fw-bold">Sort by</h5>
                         <span className="mx-2">
-                            <Form.Select>
+                            <Form.Select className="h5">
                               <option>Recently listed</option>
                             </Form.Select>
                         </span>

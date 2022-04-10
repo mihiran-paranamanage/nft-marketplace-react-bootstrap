@@ -1,5 +1,5 @@
 .collection-carousel {
-  height: 26rem;
+  height: 42rem;
 
   .carousel-inner, .carousel-item {
     height: 100%;
@@ -7,9 +7,15 @@
 
   .carousel-caption {
     bottom: 20%;
+    justify-content: space-between;
   }
 
   .collection-card {
     margin-right: 20px;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 4rem;
+    height: 4rem;
   }
 }

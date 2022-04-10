@@ -5,11 +5,15 @@
 
   .search-icon {
     position: absolute;
-    margin: 11px;
+    margin: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
   }
 
   input {
     border-radius: 3rem;
-    padding-left: 40px;
+    padding-left: 50px;
+    min-height: 3.5rem;
+    font-size: 20px;
   }
 }

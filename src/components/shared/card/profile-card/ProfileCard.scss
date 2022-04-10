@@ -3,25 +3,17 @@
 .profile-card {
   .card {
     box-shadow: 0 0 2rem #cdc8c8;
-    padding: 1rem;
-    max-width: 16rem;
-  }
-
-  .card-body {
-    padding-bottom: 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 40rem;
+    height: 50rem;
   }
 
   .card-img-sm {
-    max-width: 4rem;
-    border-radius: 2rem;
+    max-width: 8rem;
   }
 
-  .card-title {
-    font-weight: 600;
-  }
-
-  .card-text {
-    font-weight: 600;
+  .name {
     color: $light-blue;
   }
 }

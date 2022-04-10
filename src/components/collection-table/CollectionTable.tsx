@@ -22,8 +22,8 @@ export const CollectionTable: React.FC = (props) => {
 
     return (
         <div className="collection-table">
-            <div className="d-flex mb-3">
-                <h4 className="fw-bold me-4">Filter by</h4>
+            <div className="d-flex mb-3 align-items-center">
+                <h3 className="fw-bold me-4">Filter by</h3>
                 <FilterSelect options={periodFilter}/>
                 <FilterSelect options={categoryFilter}/>
                 <FilterSelect options={chainFilter}/>

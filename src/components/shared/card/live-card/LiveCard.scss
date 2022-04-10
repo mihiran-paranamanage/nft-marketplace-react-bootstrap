@@ -1,13 +1,21 @@
 .live-card {
-  width: 22rem;
-  height: 22rem;
+  width: 36rem;
+  height: 30rem;
   border-radius: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
   box-shadow: 0 0 2rem #cdc8c8;
 
+  .card-title {
+    font-size: 2rem;
+  }
+
   .card-body {
     text-align: left;
+
+    .card-text {
+      font-size: 18px;
+    }
 
     .ghost-btn {
       padding-left: 2rem;

@@ -10,7 +10,7 @@ export const SignIn: React.FC = (props) => {
     return (
         <div className="sign-in d-flex align-items-center justify-content-center">
             <div className="text-center">
-                <h4>Account Login</h4>
+                <h1 className="fw-bold">Account Login</h1>
                 <br/>
                 <Form>
                     <Form.Group className="mb-3" controlId="email">

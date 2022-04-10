@@ -1,22 +1,32 @@
 @import './src/styles/colors';
 
 .landing-page {
+  font-size: 18px;
+
   .main-content {
+    margin-bottom: 10rem;
+
     .primary-btn {
       margin-left: 1rem;
     }
   }
 
+  .live-carousel, .collection-carousel {
+    margin-bottom: 8rem;
+  }
+
   .top-category-title, .trending-title {
+    margin-top: 8rem;
+
     select {
       color: $light-blue;
-      font-weight: 600;
       border: none;
       padding: 0 30px 0 0;
     }
   }
 
   .process {
+    margin-top: 8rem;
     background-color: $light-gray;
   }
 
@@ -33,18 +43,22 @@
   }
 
   .unlock-section {
+    margin-top: 8rem;
     background-color: $light-gray;
     padding: 6rem 0 12rem;
   }
 
   .waitlist {
+    margin-top: 8rem;
     background-color: $light-gray;
 
     .input-form {
       width: 60%;
 
       .input {
+        min-height: 3.5rem;
         border-radius: 3rem;
+        font-size: 20px;
       }
     }
 

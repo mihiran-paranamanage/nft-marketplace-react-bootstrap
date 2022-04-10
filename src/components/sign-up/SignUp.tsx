@@ -9,11 +9,11 @@ export const SignUp: React.FC = (props) => {
     return (
         <div className="sign-up d-flex align-items-center justify-content-center">
             <div className="text-center">
-                <h4>
+                <h1 className="fw-bold">
                     Hi, Let's set up
                     <br/>
                     your wallet!
-                </h4>
+                </h1>
                 <br/>
                 <PrimaryButton>Select a wallet</PrimaryButton>
                 <div className="my-3">

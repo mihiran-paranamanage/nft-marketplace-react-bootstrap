@@ -1,12 +1,14 @@
 @import './src/styles/colors';
 
 .nav-bar {
+  min-height: 8rem;
+  font-size: 24px;
   justify-content: start;
   box-shadow: 0 8px 0 -2px #efefef;
   padding: 0.5rem 0;
 
   .navbar-brand img {
-    width: 4rem;
+    width: 8rem;
   }
 
   .search {
@@ -17,5 +19,6 @@
     margin-left: 1rem;
     color: $dark-gray !important;
     font-weight: 700;
+    min-width: 8rem;
   }
 }

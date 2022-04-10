@@ -1,18 +1,18 @@
 @import './src/styles/colors';
 
 .collection-card {
-  width: 16rem;
-  height: 20rem;
+  width: 24rem;
+  height: 30rem;
   border-radius: 1rem;
   padding: 1px;
   box-shadow: 0 0 2rem #cdc8c8;
 
   .card-body {
     text-align: left;
-    font-size: 12px;
+    font-size: 18px;
 
     .card-img-cover {
-      max-height: 7rem;
+      max-height: 50%;
       object-fit: cover;
       border-radius: 1rem;
     }
@@ -28,10 +28,6 @@
 
     .card-content {
       margin-top: 5rem;
-
-      .content-title {
-        font-weight: 700;
-      }
 
       .user-name {
         color: $light-blue;

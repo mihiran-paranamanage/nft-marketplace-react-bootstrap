@@ -12,14 +12,16 @@ export const NavBar: React.FC = () => {
     return (
         <Navbar className="nav-bar" bg="light" expand="lg" sticky="top">
             <Container fluid>
-                <Navbar.Brand className="mx-5">
-                    <Link className="text-decoration-none" to=''>
-                        <img src={require('../../../assets/navbar-logo.png')} alt="Logo"/>
-                    </Link>
-                </Navbar.Brand>
-                <Form className="search d-flex">
-                    <SearchInput placeholder="Search for items, collections, creators..." />
-                </Form>
+                <div className="w-100 d-flex align-items-center">
+                    <Navbar.Brand className="mx-5">
+                        <Link className="text-decoration-none" to=''>
+                            <img src={require('../../../assets/navbar-logo.png')} alt="Logo"/>
+                        </Link>
+                    </Navbar.Brand>
+                    <Form className="search d-flex mx-5">
+                        <SearchInput placeholder="Search for items, collections, creators..." />
+                    </Form>
+                </div>
                 <Navbar.Toggle className="ms-auto" aria-controls="navbarScroll" />
                 <div className="mx-5 ms-lg-auto">
                     <Navbar.Collapse id="navbarScroll">

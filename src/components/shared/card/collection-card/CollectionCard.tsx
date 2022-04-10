@@ -9,10 +9,10 @@ export const CollectionCard: React.FC = (props) => {
         <Card className="collection-card">
             <Card.Body>
                 <Card.Img className="card-img-cover" variant="top" src={require('../../../../assets/nft-sample.png')} alt="img" />
-                <Card.Img className="card-img-dp" variant="top" src={require('../../../../assets/nft-sample.png')} alt="img" />
+                <Card.Img className="card-img-dp rounded-circle" variant="top" src={require('../../../../assets/nft-sample.png')} alt="img" />
                 <div className="card-content">
-                    <div className="text-center">
-                        <p className="content-title mb-1">Lorem Ipsum Sit Dalet<br/>By <span className="user-name">{'Abcdefg'}</span></p>
+                    <div className="text-center mb-3">
+                        <h5 className="fw-bold mb-1">Lorem Ipsum Sit Dalet<br/>By <span className="user-name">{'Abcdefg'}</span></h5>
                     </div>
                     <p>Join our waitlist to get early access to exclusive drops as soon as we set sail!</p>
                 </div>

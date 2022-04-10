@@ -1,18 +1,18 @@
 @import './src/styles/colors';
 
 .new-collection-card {
-  width: 16rem;
-  height: 20rem;
+  width: 24rem;
+  height: 30rem;
   border-radius: 1rem;
   padding: 1px;
   box-shadow: 0 0 2rem #cdc8c8;
 
   .card-body {
     text-align: left;
-    font-size: 12px;
+    font-size: 18px;
 
     .card-cover {
-      height: 7rem;
+      height: 50%;
       object-fit: cover;
       background-color: $light-gray;
       border-radius: 1rem;
@@ -21,7 +21,6 @@
     .card-img-dp {
       position: absolute;
       max-width: 40%;
-      border-radius: 3rem;
       left: 30%;
       top: 30%;
       border: 3px solid white;

@@ -20,7 +20,7 @@ export const NewItem: React.FC = (props) => {
 
     return (
         <div className="new-item">
-            <h4 className="fw-bold">Create a new item</h4>
+            <h2 className="fw-bold">Create a new item</h2>
             <div className="fw-bold">Image, video, audio or 3D model</div>
             <div>
                 File types support: {'JPG, PNG, GIF, SVG, MP4, WEBM, MP3, MAV, OGG, GLB, GLTF'}

@@ -12,7 +12,7 @@ interface Props {
 export const FilterCard: React.FC<Props> = (props) => {
     return (
         <div className="filter-card">
-            <Card className="d-flex flex-row p-1 mb-1 me-3">
+            <Card className="filter d-flex flex-row p-1 mb-1 me-3">
                 {(false === props.showImage) ? null
                     : <Card.Img className="card-img-xs" src={require('../../../../assets/nft-sample.png')} alt="img" />
                 }

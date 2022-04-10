@@ -2,26 +2,23 @@
 
 .top-category-card {
   .card {
-    border: none;
-  }
-
-  .card-body {
-    display: flex;
-    background-color: $light-gray;
+    font-size: 18px;
+    height: 8rem;
     border-radius: 1rem;
 
-    .card-img-sm {
-      max-width: 4rem;
-      border-radius: 2rem;
-    }
+    .card-body {
+      display: flex;
+      background-color: $light-gray;
+      border-radius: 1rem;
 
-    .gain {
-      color: $green;
-      font-weight: 600;
-    }
+      .card-img-sm {
+        width: 6rem;
+        height: 6rem;
+      }
 
-    .index {
-      font-weight: 600;
+      .gain {
+        color: $green;
+      }
     }
   }
 }
