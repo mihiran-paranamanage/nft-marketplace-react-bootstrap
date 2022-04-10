@@ -12,6 +12,7 @@ import {CollectionList} from './components/collection-list/CollectionList';
 import {Collection} from './components/collection/Collection';
 import {CollectionTable} from './components/collection-table/CollectionTable';
 import {MyCollections} from './components/my-collections/MyCollections';
+import {NewItem} from './components/new-item/NewItem';
 
 export const AppRoutes: React.FC = () => {
     return (
@@ -22,6 +23,7 @@ export const AppRoutes: React.FC = () => {
                 <Route path='table' element={<CollectionTable/>}/>
                 <Route path=':id' element={<Collection/>}/>
             </Route>
+            <Route path='new-item' element={<NewItem/>}/>
             <Route path='explore' element={<Explore/>}/>
             <Route path='activity' element={<Activity/>}/>
             <Route path='academy' element={<Academy/>}/>

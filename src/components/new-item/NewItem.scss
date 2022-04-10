@@ -1,0 +1,89 @@
+@import './src/styles/colors';
+
+.new-item {
+  input.form-control {
+    min-height: 3.5rem;
+    border-radius: 1rem;
+  }
+
+  .create-item-card {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 1px;
+    box-shadow: 0 0 2rem #cdc8c8;
+    border: 1px dashed black;
+    cursor: pointer;
+
+    .card-body {
+      text-align: left;
+      font-size: 12px;
+
+      .card-img-dp {
+        position: absolute;
+        max-width: 40%;
+        border-radius: 3rem;
+        left: 30%;
+        top: 30%;
+        border: 3px solid white;
+      }
+    }
+  }
+
+  .form-collection-select {
+    .form-select {
+      min-height: 3.5rem;
+      border-radius: 1rem;
+    }
+  }
+
+  .form-inline-insert {
+    .insert {
+      border: 1px solid black;
+      border-radius: 1rem;
+      width: 4rem;
+      height: 3.5rem;
+      cursor: pointer;
+
+      svg {
+        color: $green;
+      }
+    }
+  }
+
+  .form-inline-switch {
+    .form-switch {
+      padding: 0.5rem;
+
+      .form-check-input {
+        width: 3rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  .form-sell-method {
+    .method {
+      border: 1px solid black;
+      border-radius: 1rem;
+      padding: 2rem 6rem;
+    }
+  }
+
+  .form-inline-select {
+    .form-select {
+      width: 16rem;
+      height: 3.5rem;
+      border-radius: 1rem;
+    }
+  }
+
+  .summary {
+    background-color: $light-gray;
+    border-radius: 1rem;
+
+    .primary-btn {
+      min-height: 3.5rem;
+    }
+  }
+}
