@@ -12,7 +12,7 @@ export const FilterSelect: React.FC<Props> = (props) => {
         <div className="filter-select">
             <Form.Select className="fw-bold">
                 {props.options.map((option) => (
-                    <option id={option.id}>{option.value}</option>
+                    <option className="fw-bold" id={option.id}>{option.value}</option>
                 ))}
             </Form.Select>
         </div>

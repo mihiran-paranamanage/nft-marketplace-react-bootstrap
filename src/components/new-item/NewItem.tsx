@@ -50,7 +50,7 @@ export const NewItem: React.FC = (props) => {
                     <Form.Text muted>
                         Lorem ipsum dolor sit amet, consectetuer adipscing elit.
                     </Form.Text>
-                    <Form.Control as="textarea" rows={6} />
+                    <Form.Control as="textarea" rows={4} />
                 </Form.Group>
 
                 <Form.Group className="mb-5 form-collection-select" controlId="form.collection">

@@ -1,10 +1,8 @@
 @import './src/styles/colors';
 
 .new-item {
-  font-size: 18px;
-
-  input.form-control {
-    min-height: 3.5rem;
+  input.form-control, textarea.form-control {
+    min-height: 3rem;
     border-radius: 1rem;
   }
 
@@ -19,7 +17,6 @@
 
     .card-body {
       text-align: left;
-      font-size: 12px;
 
       .card-img-dp {
         position: absolute;
@@ -34,7 +31,7 @@
 
   .form-collection-select {
     .form-select {
-      min-height: 3.5rem;
+      min-height: 3rem;
       border-radius: 1rem;
     }
   }
@@ -44,7 +41,7 @@
       border: 1px solid black;
       border-radius: 1rem;
       width: 4rem;
-      height: 3.5rem;
+      height: 3rem;
       cursor: pointer;
 
       svg {
@@ -69,13 +66,14 @@
       border: 1px solid black;
       border-radius: 1rem;
       padding: 2rem 6rem;
+      cursor: default;
     }
   }
 
   .form-inline-select {
     .form-select {
       width: 16rem;
-      height: 3.5rem;
+      height: 3rem;
       border-radius: 1rem;
     }
   }
@@ -85,7 +83,7 @@
     border-radius: 1rem;
 
     .primary-btn {
-      min-height: 3.5rem;
+      min-height: 3rem;
     }
   }
 }

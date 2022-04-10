@@ -1,14 +1,12 @@
 @import './src/styles/colors';
 
 .sign-in {
-  font-size: 18px;
-  min-height: 60rem;
+  margin-top: 8rem;
 
   .input {
     border-radius: 3rem;
     background-color: $light-gray;
-    min-height: 3.5rem;
-    font-size: 20px;
+    min-height: 3rem;
   }
 
   > div {

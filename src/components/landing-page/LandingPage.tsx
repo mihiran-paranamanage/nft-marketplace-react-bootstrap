@@ -37,7 +37,7 @@ export const LandingPage: React.FC = (props) => {
                     </div>
                 </div>
                 <div className="col-6">
-                    <div className="m-auto w-50">
+                    <div className="w-50">
                         <ProfileCard/>
                     </div>
                 </div>
@@ -52,13 +52,13 @@ export const LandingPage: React.FC = (props) => {
                 Top
                 <span className="mx-2">
                     <Form.Select size="lg" className="h3">
-                      <option>Sellers</option>
+                      <option className="h3">Sellers</option>
                     </Form.Select>
                 </span>
                 in
                 <span className="mx-2">
                     <Form.Select size="lg" className="h3">
-                      <option>1 day</option>
+                      <option className="h3">1 day</option>
                     </Form.Select>
                 </span>
             </h3>
@@ -121,7 +121,7 @@ export const LandingPage: React.FC = (props) => {
                 </div>
             </div>
 
-            <h3 className="why-section text-center p-5 w-75">Why is NFT Fisher different?</h3>
+            <h3 className="why-section text-center fw-bold p-5 w-75">Why is NFT Fisher different?</h3>
 
             <div className="row mb-5">
                 <div className="col-6 text-center">
@@ -179,7 +179,7 @@ export const LandingPage: React.FC = (props) => {
                 Trending in
                 <span className="mx-2">
                     <Form.Select size="lg" className="h3">
-                      <option>All categories</option>
+                      <option className="h3">All categories</option>
                     </Form.Select>
                 </span>
             </h3>

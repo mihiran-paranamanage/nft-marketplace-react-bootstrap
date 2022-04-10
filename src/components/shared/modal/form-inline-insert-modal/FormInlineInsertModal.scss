@@ -1,16 +1,14 @@
 @import './src/styles/colors';
 
 .form-inline-insert-modal {
-  font-size: 18px;
-
   input.form-control, .primary-btn {
-    min-height: 3.5rem;
+    min-height: 3rem;
     border-radius: 1rem;
   }
 
   .modal-content {
     border-radius: 1rem;
-    padding: 2rem 2rem 4rem;
+    padding: 2rem;
   }
 
   .btn-close {

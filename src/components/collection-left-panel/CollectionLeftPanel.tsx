@@ -30,7 +30,7 @@ export const CollectionLeftPanel: React.FC = (props) => {
     ];
 
     return (
-        <Offcanvas className="collection-left-panel" show={show} onHide={handleClose} {...offCanvasOptions}>
+        <Offcanvas className="collection-left-panel fw-bold" show={show} onHide={handleClose} {...offCanvasOptions}>
             <Offcanvas.Body>
                 <div className="d-flex" onClick={toggleShow}>
                     <FontAwesomeIcon className="me-2" icon={faAngleLeft} />
@@ -39,7 +39,7 @@ export const CollectionLeftPanel: React.FC = (props) => {
 
                 <hr/>
 
-                <div className="d-flex">
+                <div className="d-flex mb-3">
                     Category
                     <FontAwesomeIcon className="ms-2" icon={faAngleDown} />
                 </div>
@@ -61,7 +61,7 @@ export const CollectionLeftPanel: React.FC = (props) => {
 
                 <hr/>
 
-                <div className="d-flex">
+                <div className="d-flex mb-3">
                     Artist
                     <FontAwesomeIcon className="ms-2" icon={faAngleDown} />
                 </div>
@@ -85,7 +85,7 @@ export const CollectionLeftPanel: React.FC = (props) => {
 
                 <hr/>
 
-                <div className="d-flex">
+                <div className="d-flex mb-3">
                     Price
                     <FontAwesomeIcon className="ms-2" icon={faAngleDown} />
                 </div>

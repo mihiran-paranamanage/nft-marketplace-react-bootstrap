@@ -13,7 +13,7 @@ export const MyCollectionsLeftPanel: React.FC = (props) => {
     const offCanvasOptions = {scroll: true, backdrop: false};
 
     return (
-        <Offcanvas className="my-collections-left-panel" show={show} onHide={handleClose} {...offCanvasOptions}>
+        <Offcanvas className="my-collections-left-panel fw-bold" show={show} onHide={handleClose} {...offCanvasOptions}>
             <Offcanvas.Body>
                 <div className="d-flex" onClick={toggleShow}>
                     <FontAwesomeIcon className="me-2" icon={faAngleLeft} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faDiamond, faHeart, faCalculator, faGamepad, faArrowDown, faArrowUp} from '@fortawesome/free-solid-svg-icons'
+import {faDiamond, faHeart, faCalculator, faGamepad, faArrowDown, faArrowUp, faClock} from '@fortawesome/free-solid-svg-icons'
 import {Card, Form, Table} from 'react-bootstrap';
 import {Chart, registerables} from 'chart.js';
 import {MDBContainer} from "mdbreact";
@@ -45,8 +45,8 @@ export const Collection: React.FC = (props) => {
 
     return (
         <div className="collection">
-            <div className="d-flex mb-5">
-                <img src={require('../../assets/nft-sample.png')} alt="Logo"/>
+            <div className="collection-details d-flex">
+                <img className="img-lg" src={require('../../assets/nft-sample.png')} alt="Logo"/>
                 <div className="w-50 ms-auto">
                     <div className="w-50">
                         <h3 className="font-light-blue fw-bold">Collection Name</h3>
@@ -65,7 +65,10 @@ export const Collection: React.FC = (props) => {
 
                         <hr className="mb-0" />
 
-                        <div className="small text-end mb-4">Sale ends {'April 25, 2022'} at {'9.28pm'} {'CST'}</div>
+                        <div className="d-flex justify-content-end">
+                            <FontAwesomeIcon className="me-1" icon={faClock} size="sm" />
+                            <div className="small mb-4">Sale ends {'April 25, 2022'} at {'9.28pm'} {'CST'}</div>
+                        </div>
 
                         <div className="d-flex">
                             <div>
@@ -74,7 +77,7 @@ export const Collection: React.FC = (props) => {
                                     <FontAwesomeIcon className="me-2" icon={faDiamond} size="lg" />
                                     <span className="fw-bold">{'3.5'}</span>
                                 </div>
-                                [{'$5,348.45'}]
+                                <div className="text-muted">[{'$5,348.45'}]</div>
                             </div>
                             <div className="ms-auto">
                                 <PrimaryButton width="100%">Buy now</PrimaryButton>
@@ -86,7 +89,7 @@ export const Collection: React.FC = (props) => {
             </div>
 
             <div className="collection-stats">
-                <div className="row">
+                <div className="row mb-2">
                     <div className="col-6 d-flex flex-column justify-content-between">
                         <div className="properties mb-3">
                             <Card body className="px-3 py-5">
@@ -138,7 +141,7 @@ export const Collection: React.FC = (props) => {
                             </Card>
                         </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-6 d-flex flex-column justify-content-between">
                         <div className="price-graph mb-3">
                             <Card body className="p-3">
                                 <div className="d-flex mb-3">
@@ -146,7 +149,7 @@ export const Collection: React.FC = (props) => {
                                         <h5 className="fw-bold mb-0">Price graph</h5>
                                         <span className="mx-2">
                                             <Form.Select className="fw-bold">
-                                              <option>All time</option>
+                                              <option className="fw-bold">All time</option>
                                             </Form.Select>
                                         </span>
                                     </div>
@@ -255,7 +258,7 @@ export const Collection: React.FC = (props) => {
                             <h5 className="fw-bold">Activity</h5>
                             <span className="mx-2">
                             <Form.Select className="fw-bold">
-                              <option>Filter by</option>
+                              <option className="fw-bold">Filter by</option>
                             </Form.Select>
                         </span>
                         </div>
@@ -304,7 +307,9 @@ export const Collection: React.FC = (props) => {
                     <ListCard/>
                     <ListCard/>
                 </div>
-                <PrimaryButton color="dark-blue">View Collection</PrimaryButton>
+                <div className="d-flex">
+                    <PrimaryButton color="dark-blue">View Collection</PrimaryButton>
+                </div>
             </div>
         </div>
     )

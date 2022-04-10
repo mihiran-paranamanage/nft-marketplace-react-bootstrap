@@ -35,8 +35,8 @@ export const CollectionList: React.FC = (props) => {
                     <div className="ms-auto d-flex">
                         <h5 className="text-muted fw-bold">Sort by</h5>
                         <span className="mx-2">
-                            <Form.Select className="h5">
-                              <option>Recently listed</option>
+                            <Form.Select className="h5 fw-bold">
+                              <option className="h5 fw-bold">Recently listed</option>
                             </Form.Select>
                         </span>
                     </div>

@@ -1,8 +1,6 @@
 @import './src/styles/colors';
 
 .landing-page {
-  font-size: 18px;
-
   .main-content {
     margin-bottom: 10rem;
 
@@ -56,9 +54,8 @@
       width: 60%;
 
       .input {
-        min-height: 3.5rem;
+        min-height: 3rem;
         border-radius: 3rem;
-        font-size: 20px;
       }
     }
 

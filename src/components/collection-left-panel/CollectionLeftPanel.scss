@@ -2,7 +2,6 @@
 
 .collection-left-panel {
   background-color: $light-gray;
-  font-weight: 600;
   padding: 1rem;
   width: 20%;
 
@@ -25,8 +24,7 @@
       input {
         border-radius: 2rem;
         text-align: center;
-        min-height: 3.5rem;
-        font-size: 20px;
+        min-height: 3rem;
       }
     }
   }

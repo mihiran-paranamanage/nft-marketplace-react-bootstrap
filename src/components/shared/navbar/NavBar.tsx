@@ -1,11 +1,10 @@
 import React from 'react';
-import {Container, Navbar, Nav, Form, FormControl} from 'react-bootstrap'
-import {BsSearch} from 'react-icons/bs'
+import {Container, Navbar, Nav, Form} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 import './NavBar.scss';
 
 import {PrimaryButton} from '../button/primary-button/PrimaryButton';
-import {Link} from 'react-router-dom';
 import {SearchInput} from '../search-input/SearchInput';
 
 export const NavBar: React.FC = () => {
@@ -25,7 +24,7 @@ export const NavBar: React.FC = () => {
                 <Navbar.Toggle className="ms-auto" aria-controls="navbarScroll" />
                 <div className="mx-5 ms-lg-auto">
                     <Navbar.Collapse id="navbarScroll">
-                        <Nav className="align-items-center" style={{ maxHeight: '100px' }} navbarScroll>
+                        <Nav className="align-items-center fw-bold" style={{ maxHeight: '100px' }} navbarScroll>
                             <Nav.Link href='/explore'>Explore</Nav.Link>
                             <Nav.Link href='/activity'>Activity</Nav.Link>
                             <Nav.Link href='/academy'>Academy</Nav.Link>

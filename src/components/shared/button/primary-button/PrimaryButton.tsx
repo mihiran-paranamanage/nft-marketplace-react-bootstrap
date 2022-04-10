@@ -8,7 +8,7 @@ export interface ButtonProps {
 }
 
 export const PrimaryButton: React.FC<ButtonProps> = (props) => {
-    const className = `primary-btn ${props.color}`
+    const className = `primary-btn fw-bold ${props.color}`
     return (
         <button className={className}
                 style={{width: props.width}}>
