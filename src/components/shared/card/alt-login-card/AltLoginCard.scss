@@ -1,0 +1,28 @@
+@import '../../../../styles/colors';
+
+.alt-login-card {
+  cursor: pointer;
+  max-width: 80%;
+
+  .card {
+    color: white;
+
+    .card-img-xs {
+      max-width: 3rem;
+      max-height: 3rem;
+      background-color: white;
+    }
+
+    &.wallet {
+      background-color: $black;
+    }
+
+    &.facebook {
+      background-color: $facebook-bg-color;
+    }
+
+    &.google {
+      background-color: $google-bg-color;
+    }
+  }
+}

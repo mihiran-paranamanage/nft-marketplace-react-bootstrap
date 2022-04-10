@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import './SignIn.scss';
 
 import {PrimaryButton} from '../shared/button/primary-button/PrimaryButton';
+import {AltLoginCard} from '../shared/card/alt-login-card/AltLoginCard';
 
 export const SignIn: React.FC = (props) => {
     return (
@@ -26,6 +27,12 @@ export const SignIn: React.FC = (props) => {
                     { ' / ' }
                     <Link className="text-decoration-none" to=''>Forgot your password?</Link>
                 </div>
+
+                <div className="mb-3">OR</div>
+
+                <AltLoginCard id={'1'} name={'Wallet'} type={'wallet'} />
+                <AltLoginCard id={'2'} name={'Facebook'} type={'facebook'} />
+                <AltLoginCard id={'3'} name={'Google'} type={'google'} />
             </div>
         </div>
     )
