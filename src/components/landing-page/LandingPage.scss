@@ -26,11 +26,16 @@
   .process {
     margin-top: 8rem;
     background-color: $light-gray;
+    background-image: url('./../../assets/process-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
   }
 
   .join-section {
     margin-top: 12rem;
-    margin-bottom: 16rem;
+    margin-bottom: 24rem;
+    color: white;
   }
 
   .why-section {
@@ -44,6 +49,11 @@
     margin-top: 8rem;
     background-color: $light-gray;
     padding: 6rem 0 12rem;
+    background-image: url('./../../assets/unlock-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    color: white;
   }
 
   .waitlist {

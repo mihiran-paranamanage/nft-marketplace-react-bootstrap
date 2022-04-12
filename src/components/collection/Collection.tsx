@@ -73,9 +73,9 @@ export const Collection: React.FC = (props) => {
                         <div className="d-flex">
                             <div>
                                 Current Price
-                                <div className="d-flex">
+                                <div className="d-flex my-2">
                                     <FontAwesomeIcon className="me-2" icon={faDiamond} size="lg" />
-                                    <span className="fw-bold">{'3.5'}</span>
+                                    <span className="fw-bold h4 m-0">{'3.5'}</span>
                                 </div>
                                 <div className="text-muted">[{'$5,348.45'}]</div>
                             </div>

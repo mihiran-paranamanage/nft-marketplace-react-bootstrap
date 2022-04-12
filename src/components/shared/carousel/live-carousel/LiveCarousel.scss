@@ -1,3 +1,5 @@
+@import '../../../../styles/colors';
+
 .live-carousel {
   img {
     width: 100%;
@@ -11,5 +13,8 @@
   .carousel-control-prev-icon, .carousel-control-next-icon {
     width: 4rem;
     height: 4rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: 3px solid white;
   }
 }

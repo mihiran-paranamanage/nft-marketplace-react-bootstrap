@@ -32,20 +32,20 @@ export const CollectionTable: React.FC = (props) => {
             <Table responsive>
                 <thead>
                 <tr className="text-muted">
-                    <th>#</th>
-                    <th>Collection</th>
-                    <th>Volume</th>
-                    <th>24h%</th>
-                    <th>7d%</th>
-                    <th>Floor Price</th>
-                    <th>Owners</th>
-                    <th>Items</th>
+                    <th className="fw-bold">#</th>
+                    <th className="fw-bold">Collection</th>
+                    <th className="fw-bold">Volume</th>
+                    <th className="fw-bold">24h%</th>
+                    <th className="fw-bold">7d%</th>
+                    <th className="fw-bold">Floor Price</th>
+                    <th className="fw-bold">Owners</th>
+                    <th className="fw-bold">Items</th>
                 </tr>
                 </thead>
                 <tbody>
                 {rows.map((row, index) => (
                     <tr>
-                        <td>{index + 1}</td>
+                        <td className="fw-bold">{index + 1}.</td>
                         <td>
                             <CollectionCellCard id={'1'} name={'Lorep Ipsum'} />
                         </td>

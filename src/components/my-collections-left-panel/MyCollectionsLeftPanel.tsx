@@ -1,24 +1,27 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
 import {Offcanvas} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleDown, faAngleLeft} from '@fortawesome/free-solid-svg-icons';
 
 import './MyCollectionsLeftPanel.scss';
 
+import AppContext from '../../context/app-context';
+
 export const MyCollectionsLeftPanel: React.FC = (props) => {
-    const [show, setShow] = useState(true);
-    const handleClose = () => setShow(false);
-    const toggleShow = () => setShow((s: boolean) => !s);
+    const appContext = useContext(AppContext);
+    const show = appContext.showMyCollectionLeftPanel;
+    const handleClose = () => appContext.toggleMyCollectionLeftPanel();
+    const toggleShow = () => appContext.toggleMyCollectionLeftPanel();
 
     const offCanvasOptions = {scroll: true, backdrop: false};
 
     return (
         <Offcanvas className="my-collections-left-panel fw-bold" show={show} onHide={handleClose} {...offCanvasOptions}>
             <Offcanvas.Body>
-                <div className="d-flex" onClick={toggleShow}>
+                <button className="d-flex border-0 bg-transparent" onClick={toggleShow}>
                     <FontAwesomeIcon className="me-2" icon={faAngleLeft} />
-                    <h6>Hide side bar</h6>
-                </div>
+                    <h6 className="fw-bold">Hide side bar</h6>
+                </button>
 
                 <hr/>
 
