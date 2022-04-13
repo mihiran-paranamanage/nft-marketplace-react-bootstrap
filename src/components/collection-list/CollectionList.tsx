@@ -55,19 +55,19 @@ export const CollectionList: React.FC = (props) => {
                 </div>
 
                 <div className="list">
-                    <div className="d-flex row justify-content-between mb-5">
+                    <div className="d-flex row justify-content-evenly mb-5">
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>
                     </div>
-                    <div className="d-flex row justify-content-between mb-5">
+                    <div className="d-flex row justify-content-evenly mb-5">
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>
                     </div>
-                    <div className="d-flex row justify-content-between mb-5">
+                    <div className="d-flex row justify-content-evenly mb-5">
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>

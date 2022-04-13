@@ -301,7 +301,7 @@ export const Collection: React.FC = (props) => {
 
             <div className="more">
                 <h3 className="fw-bold">More from this collection</h3>
-                <div className="d-flex row justify-content-between mb-5">
+                <div className="d-flex row justify-content-evenly mb-5">
                     <ListCard/>
                     <ListCard/>
                     <ListCard/>

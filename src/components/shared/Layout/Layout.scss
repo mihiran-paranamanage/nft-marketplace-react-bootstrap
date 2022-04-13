@@ -1,6 +1,10 @@
 .layout {
-    width: 60%;
+    width: 80%;
     min-height: 55rem;
     margin: 2rem auto;
     padding: 1rem;
+
+    &.align-right {
+        margin-left: 20%;
+    }
 }

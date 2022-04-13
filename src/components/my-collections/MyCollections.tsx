@@ -26,7 +26,7 @@ export const MyCollections: React.FC = (props) => {
             <div className="body px-5">
                 <h3 className="fw-bold mb-5">My Collections</h3>
                 <div className="list">
-                    <div className="d-flex row justify-content-between mb-5">
+                    <div className="d-flex row justify-content-evenly mb-5">
                         <CollectionCard/>
                         <CollectionCard/>
                         <NewCollectionCard/>

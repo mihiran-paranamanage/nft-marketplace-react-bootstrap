@@ -1,15 +1,15 @@
 import React, {createContext, useState} from 'react';
 
 const AppContext = createContext({
-    showCollectionLeftPanel: true,
-    showMyCollectionLeftPanel: true,
+    showCollectionLeftPanel: false,
+    showMyCollectionLeftPanel: false,
     toggleCollectionLeftPanel: () => {},
     toggleMyCollectionLeftPanel: () => {}
 });
 
 export const AppContextProvider: React.FC = (props) => {
-    const [showCollectionLeftPanel, setShowCollectionLeftPanel] = useState(true);
-    const [showMyCollectionLeftPanel, setShowMyCollectionLeftPanel] = useState(true);
+    const [showCollectionLeftPanel, setShowCollectionLeftPanel] = useState(false);
+    const [showMyCollectionLeftPanel, setShowMyCollectionLeftPanel] = useState(false);
     const toggleCollectionLeftPanel = () => setShowCollectionLeftPanel((s: boolean) => !s);
     const toggleMyCollectionLeftPanel = () => setShowMyCollectionLeftPanel((s: boolean) => !s);
 
