@@ -1,8 +1,7 @@
 import React from 'react';
+import {Card} from 'react-bootstrap';
 
 import './CollectionCard.scss';
-
-import {Card} from 'react-bootstrap';
 
 export const CollectionCard: React.FC = (props) => {
     return (
