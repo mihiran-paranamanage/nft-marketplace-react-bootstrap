@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Card, Form} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faPlus} from '@fortawesome/free-solid-svg-icons';
+import {faPlus, faDiamond} from '@fortawesome/free-solid-svg-icons';
 
 import './NewItem.scss';
 
@@ -57,10 +57,10 @@ export const NewItem: React.FC = (props) => {
                     <Form.Label className="fw-bold">Collection</Form.Label>
                     <Form.Select className="mb-5" aria-label="Collection">
                         <option value="1">
-                            <CollectionCellCard id={'1'} name={'Lorep Ipsum 1'} />
+                            {<CollectionCellCard id={'1'} name={'Lorep Ipsum 1'}/>}
                         </option>
                         <option value="2">
-                            <CollectionCellCard id={'2'} name={'Lorep Ipsum 2'} />
+                            {<CollectionCellCard id={'2'} name={'Lorep Ipsum 2'}/>}
                         </option>
                     </Form.Select>
                 </Form.Group>
@@ -167,13 +167,18 @@ export const NewItem: React.FC = (props) => {
                         <h5 className="fw-bold">Price</h5>
                         Lorem ipsum dolor sit amet, consectetuer adipscing elit.
                     </div>
-                    <div className="ms-auto">
-                        <Form.Select aria-label="Collection">
-                            <option value="1">$1</option>
-                            <option value="2">$10</option>
-                            <option value="3">$100</option>
-                            <option value="4">$1000</option>
-                        </Form.Select>
+                    <div className="d-flex ms-auto align-items-center">
+                        <div className="input-group">
+                            <label className="input-group-text">
+                                <FontAwesomeIcon icon={faDiamond} />
+                            </label>
+                            <Form.Select aria-label="Collection">
+                                <option value="1">$1</option>
+                                <option value="2">$10</option>
+                                <option value="3">$100</option>
+                                <option value="4">$1000</option>
+                            </Form.Select>
+                        </div>
                     </div>
                 </div>
 
