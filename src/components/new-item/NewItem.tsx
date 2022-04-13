@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Card, Form} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faPlus, faDiamond} from '@fortawesome/free-solid-svg-icons';
+import Select from 'react-select'
 
 import './NewItem.scss';
 
@@ -12,6 +13,11 @@ import {FormInlineInsertModal} from '../shared/modal/form-inline-insert-modal/Fo
 export const NewItem: React.FC = (props) => {
     const [inlineInsertModalShow, setInlineInsertModalShow] = useState(false);
     const [inlineInsertModalTitle, setInlineInsertModalTitle] = useState('');
+    const collectionOptions = [
+        { value: '1', label: <CollectionCellCard id={'1'} name={'Lorep Ipsum 1'} /> },
+        { value: '2', label: <CollectionCellCard id={'2'} name={'Lorep Ipsum 2'} /> },
+        { value: '3', label: <CollectionCellCard id={'3'} name={'Lorep Ipsum 3'} /> }
+    ];
 
     function inlineInsertModalHandler(title: string) {
         setInlineInsertModalShow(true);
@@ -55,14 +61,7 @@ export const NewItem: React.FC = (props) => {
 
                 <Form.Group className="mb-5 form-collection-select" controlId="form.collection">
                     <Form.Label className="fw-bold">Collection</Form.Label>
-                    <Form.Select className="mb-5" aria-label="Collection">
-                        <option value="1">
-                            {<CollectionCellCard id={'1'} name={'Lorep Ipsum 1'}/>}
-                        </option>
-                        <option value="2">
-                            {<CollectionCellCard id={'2'} name={'Lorep Ipsum 2'}/>}
-                        </option>
-                    </Form.Select>
+                    <Select options={collectionOptions} />
                 </Form.Group>
 
                 <div className="d-flex mb-5 form-inline-insert">
