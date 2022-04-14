@@ -12,7 +12,7 @@ export const NavBar: React.FC = () => {
         <Navbar className="nav-bar" bg="light" expand="lg" sticky="top">
             <Container fluid>
                 <div className="w-100 d-flex align-items-center">
-                    <Navbar.Brand className="mx-5">
+                    <Navbar.Brand>
                         <Link className="text-decoration-none" to=''>
                             <img src={require('../../../assets/navbar-logo.png')} alt="Logo"/>
                         </Link>

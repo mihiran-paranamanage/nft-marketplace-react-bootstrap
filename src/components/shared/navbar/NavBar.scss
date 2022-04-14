@@ -6,8 +6,13 @@
   box-shadow: 0 8px 0 -2px #efefef;
   padding: 0.5rem 0;
 
-  .navbar-brand img {
-    width: 8rem;
+  .navbar-brand {
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+    img {
+      width: 8rem;
+    }
   }
 
   .search {
@@ -27,6 +32,11 @@
   }
 
   @media (max-width: 768px) {
+    .navbar-brand {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+
     #navbarScroll {
       background-color: $light-gray;
 
