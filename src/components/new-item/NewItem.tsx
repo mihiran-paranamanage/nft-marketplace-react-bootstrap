@@ -25,7 +25,7 @@ export const NewItem: React.FC = (props) => {
     }
 
     return (
-        <div className="new-item w-75 mx-auto">
+        <div className="new-item mx-auto">
             <h2 className="fw-bold">Create a new item</h2>
             <div className="fw-bold">Image, video, audio or 3D model</div>
             <div>
@@ -145,7 +145,7 @@ export const NewItem: React.FC = (props) => {
 
                 <Form.Group className="mb-5 form-sell-method" controlId="form.sellMethod">
                     <Form.Label className="fw-bold">Select your sell method</Form.Label>
-                    <div className="d-flex justify-content-evenly">
+                    <div className="method-group d-flex justify-content-evenly">
                         <div className="method">
                             <div className="fw-bold">Set price</div>
                             <div className="small text-muted">Lorem ipsum sit dolor</div>
@@ -161,12 +161,12 @@ export const NewItem: React.FC = (props) => {
                     </div>
                 </Form.Group>
 
-                <div className="d-flex mb-5 form-inline-select">
+                <div className="d-flex mb-5 justify-content-between form-inline-select">
                     <div>
                         <h5 className="fw-bold">Price</h5>
                         Lorem ipsum dolor sit amet, consectetuer adipscing elit.
                     </div>
-                    <div className="d-flex ms-auto align-items-center">
+                    <div className="d-flex align-items-center">
                         <div className="input-group">
                             <label className="input-group-text">
                                 <FontAwesomeIcon icon={faDiamond} />
@@ -210,7 +210,7 @@ export const NewItem: React.FC = (props) => {
                 <div className="summary p-5">
                     <h4 className="fw-bold mb-5">Summary</h4>
 
-                    <div className="d-flex">
+                    <div className="summary-content d-flex">
                         <div>
                             <div className="mb-5">
                                 <h5 className="fw-bold">Listing</h5>
@@ -225,9 +225,9 @@ export const NewItem: React.FC = (props) => {
                             <div className="mb-5">
                                 <h5 className="fw-bold">Fees</h5>
                                 Lorem ipsum dolor sit amet, consectetuer adipscing elit.<br/>
-                                To NFT Fisher...............................................................................................................1%
+                                To NFT Fisher.........................................................................1%
                                 <p>
-                                <span className="fw-bold">Total</span>................................................................................................................................1%
+                                <span className="fw-bold">Total</span>.........................................................................................1%
                                 </p>
                             </div>
                         </div>

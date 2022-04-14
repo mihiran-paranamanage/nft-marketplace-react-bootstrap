@@ -17,14 +17,14 @@ export const NavBar: React.FC = () => {
                             <img src={require('../../../assets/navbar-logo.png')} alt="Logo"/>
                         </Link>
                     </Navbar.Brand>
-                    <Form className="search d-flex mx-5">
+                    <Form className="search d-flex mx-md-5">
                         <SearchInput placeholder="Search for items, collections, creators..." />
                     </Form>
                 </div>
                 <Navbar.Toggle className="ms-auto" aria-controls="navbarScroll" />
-                <div className="mx-5 ms-lg-auto">
+                <div className="ms-auto w-100">
                     <Navbar.Collapse id="navbarScroll">
-                        <Nav className="align-items-center fw-bold" style={{ maxHeight: '100px' }} navbarScroll>
+                        <Nav className="align-items-center text-center fw-bold ms-auto" style={{ maxHeight: '240px' }} navbarScroll>
                             <Link className="nav-link" to='/explore'>Explore</Link>
                             <Link className="nav-link" to='/activity'>Activity</Link>
                             <Link className="nav-link" to='/academy'>Academy</Link>

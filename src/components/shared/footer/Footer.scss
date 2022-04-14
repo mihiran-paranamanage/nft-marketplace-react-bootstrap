@@ -11,4 +11,8 @@
   img {
     width: 8rem;
   }
+
+  @media (max-width: 768px) {
+    max-height: 480px;
+  }
 }

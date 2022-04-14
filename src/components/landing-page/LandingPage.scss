@@ -4,8 +4,12 @@
   .main-content {
     margin-bottom: 10rem;
 
-    .primary-btn {
-      margin-left: 1rem;
+    .details {
+      width: 75%;
+
+      .primary-btn {
+        margin-left: 1rem;
+      }
     }
   }
 
@@ -28,14 +32,19 @@
     background-color: $light-gray;
     background-image: url('./../../assets/process-bg.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: bottom;
     background-size: 100%;
+    color: white;
   }
 
   .join-section {
     margin-top: 12rem;
     margin-bottom: 24rem;
-    color: white;
+
+    p {
+      width: 50%;
+    }
   }
 
   .why-section {
@@ -51,26 +60,54 @@
     padding: 6rem 0 12rem;
     background-image: url('./../../assets/unlock-bg.jpg');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: bottom;
     background-size: 100%;
-    color: white;
+
+    p {
+      width: 25%;
+    }
   }
 
   .waitlist {
     margin-top: 8rem;
     background-color: $light-gray;
 
-    .input-form {
-      width: 60%;
-
-      .input {
-        min-height: 3rem;
-        border-radius: 3rem;
-      }
+    .text {
+      width: 50%;
     }
 
-    .primary-btn {
-      height: 38px;
+    .waitlist-form {
+      width: 75%;
+
+      .input-form {
+        width: 60%;
+
+        .input {
+          min-height: 3rem;
+          border-radius: 3rem;
+        }
+
+        .primary-btn {
+          height: 38px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .main-content .details,
+    .waitlist .waitlist-form,
+    .waitlist .text,
+    .join-section p,
+    .unlock-section p
+    {
+      width: 100%;
+    }
+
+    .join-section .primary-btn,
+    .unlock-section .primary-btn {
+      width: 80% !important;
     }
   }
 }

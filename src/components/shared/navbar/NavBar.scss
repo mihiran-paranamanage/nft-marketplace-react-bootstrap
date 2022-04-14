@@ -11,12 +11,36 @@
   }
 
   .search {
-    width: 30%;
+    min-width: 30%;
   }
 
   .nav-link {
     margin-left: 1rem;
     color: $black !important;
     min-width: 8rem;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  @media (max-width: 768px) {
+    #navbarScroll {
+      background-color: $light-gray;
+
+      .navbar-nav {
+        padding-bottom: 2rem;
+
+        .nav-link {
+          width: 100%;
+
+          .primary-btn {
+            width: 30%;
+          }
+        }
+      }
+    }
   }
 }

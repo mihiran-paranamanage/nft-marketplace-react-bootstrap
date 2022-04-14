@@ -1,6 +1,8 @@
 @import './src/styles/colors';
 
 .new-item {
+  width: 75%;
+
   input.form-control, textarea.form-control {
     min-height: 3rem;
     border-radius: 0.5rem;
@@ -87,6 +89,30 @@
 
     .primary-btn {
       min-height: 3rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+
+    .form-sell-method {
+      .method-group {
+        flex-direction: column;
+
+        .method {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .form-inline-select {
+      flex-direction: column;
+    }
+
+    .summary {
+      .summary-content {
+        flex-direction: column;
+      }
     }
   }
 }

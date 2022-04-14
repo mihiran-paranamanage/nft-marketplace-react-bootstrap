@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
         <footer className="footer">
             <Container fluid>
                 <div className="row p-3">
-                    <div className="col-md-5">
+                    <div className="col-12 col-md-5">
                         <img src={require('../../../assets/navbar-logo.png')} alt="Logo"/>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -19,7 +19,7 @@ export const Footer: React.FC = () => {
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         </p>
                     </div>
-                    <div className="col-md-2">
+                    <div className="col-12 col-md-2">
                         <h6>Menu</h6>
                         <ul className="list-unstyled">
                             <li>Link 1</li>
@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
                             <li>Link 3</li>
                         </ul>
                     </div>
-                    <div className="col-md-2">
+                    <div className="col-12 col-md-2">
                         <h6>My Account</h6>
                         <ul className="list-unstyled">
                             <li>Link 1</li>
@@ -35,7 +35,7 @@ export const Footer: React.FC = () => {
                             <li>Link 3</li>
                         </ul>
                     </div>
-                    <div className="col-md-3 ms-auto">
+                    <div className="col-12 col-md-3 ms-auto">
                         <h6>Trending in all categories</h6>
                         <div className="d-flex">
                             <SocialIcon className="me-2" url="https://facebook.com/jaketrent" />
