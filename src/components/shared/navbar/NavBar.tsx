@@ -25,16 +25,16 @@ export const NavBar: React.FC = () => {
                 <div className="mx-5 ms-lg-auto">
                     <Navbar.Collapse id="navbarScroll">
                         <Nav className="align-items-center fw-bold" style={{ maxHeight: '100px' }} navbarScroll>
-                            <Nav.Link href='/explore'>Explore</Nav.Link>
-                            <Nav.Link href='/activity'>Activity</Nav.Link>
-                            <Nav.Link href='/academy'>Academy</Nav.Link>
-                            <Nav.Link href='/blog'>Blog</Nav.Link>
-                            <Nav.Link href='/sign-in'>
+                            <Link className="nav-link" to='/explore'>Explore</Link>
+                            <Link className="nav-link" to='/activity'>Activity</Link>
+                            <Link className="nav-link" to='/academy'>Academy</Link>
+                            <Link className="nav-link" to='/blog'>Blog</Link>
+                            <Link className="nav-link" to='/sign-in'>
                                 <PrimaryButton color="black">Sign in</PrimaryButton>
-                            </Nav.Link>
-                            <Nav.Link href='/sign-up'>
+                            </Link>
+                            <Link className="nav-link" to='/sign-up'>
                                 <PrimaryButton>Create</PrimaryButton>
-                            </Nav.Link>
+                            </Link>
                         </Nav>
                     </Navbar.Collapse>
                 </div>
