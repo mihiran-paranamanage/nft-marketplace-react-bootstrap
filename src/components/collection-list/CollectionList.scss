@@ -2,6 +2,9 @@
 
 .collection-list {
   .body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+
     .sort {
       select {
         color: $light-blue;
@@ -9,9 +12,44 @@
         padding: 0 30px 0 0;
       }
     }
+
+    .list {
+      .row {
+        margin-bottom: 3rem;
+      }
+    }
   }
 
   .show-side-bar {
     left: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .body {
+      padding-left: 0;
+      padding-right: 0;
+
+      .filters {
+        flex-direction: column;
+
+        .filter-card {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      .list {
+        .row {
+          margin-bottom: 0;
+
+          .list-card {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+
+    .show-side-bar {
+      left: 1rem;
+    }
   }
 }

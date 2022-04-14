@@ -3,6 +3,10 @@
 .collection {
   margin-top: 4rem;
 
+  .mw-300 {
+    min-width: 300px;
+  }
+
   .font-light-blue {
     color: $light-blue;
   }
@@ -66,6 +70,47 @@
     .primary-btn {
       margin-left: auto;
       margin-right: auto;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .collection-details {
+      .img-lg {
+        margin-bottom: 3rem;
+      }
+    }
+
+    .collection-stats {
+      padding: 6rem 1rem;
+
+      .properties,
+      .about,
+      .details,
+      .price-graph,
+      .listings,
+      .offers,
+      .activity {
+        overflow-y: scroll;
+
+        >.card {
+          min-width: 60rem;
+        }
+      }
+    }
+
+    .more {
+      padding-left: 0;
+      padding-right: 0;
+
+      .more-collections {
+        flex-direction: column;
+
+        .list-card {
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 1rem;
+        }
+      }
     }
   }
 }

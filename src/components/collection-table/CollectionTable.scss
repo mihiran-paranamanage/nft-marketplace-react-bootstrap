@@ -1,11 +1,27 @@
 @import './src/styles/colors';
 
 .collection-table {
-  .filter-select {
-    margin: 0 0.5rem;
+  .filters {
+    .filter-select {
+      margin: 0 0.5rem;
+    }
   }
 
   .table {
+    th {
+      &.mw-20 {
+        min-width: 20px;
+      }
+
+      &.mw-200 {
+        min-width: 200px;
+      }
+
+      &.mw-80 {
+        min-width: 80px;
+      }
+    }
+
     td {
       vertical-align: middle;
     }
@@ -16,6 +32,26 @@
 
     .loss {
       color: $red;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .filter-group {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .filter-group {
+      flex-direction: column;
+
+      .filters {
+        flex-direction: column;
+
+        .filter-select {
+          margin-bottom: 0.5rem;
+        }
+      }
     }
   }
 }

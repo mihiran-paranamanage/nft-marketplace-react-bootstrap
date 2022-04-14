@@ -1,5 +1,38 @@
 .my-collections {
+  .body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    .list {
+      .row {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
   .show-side-bar {
     left: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    .body {
+      padding-top: 3rem;
+      padding-left: 0;
+      padding-right: 0;
+
+      .list {
+        .row {
+          margin-bottom: 0;
+
+          .collection-card {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+
+    .show-side-bar {
+      left: 1rem;
+    }
   }
 }

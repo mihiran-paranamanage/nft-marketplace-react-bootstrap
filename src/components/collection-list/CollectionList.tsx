@@ -31,7 +31,7 @@ export const CollectionList: React.FC = (props) => {
                 <FontAwesomeIcon className="ms-2" icon={faAngleRight} />
             </button>
 
-            <div className="body px-5">
+            <div className="body">
                 <div className="filters d-flex align-items-center">
                     {filters.map((filter: {id: string, name: string}) => (
                         <FilterCard id={filter.id} name={filter.name} />
@@ -55,19 +55,19 @@ export const CollectionList: React.FC = (props) => {
                 </div>
 
                 <div className="list">
-                    <div className="d-flex row justify-content-evenly mb-5">
+                    <div className="d-flex row justify-content-evenly">
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>
                     </div>
-                    <div className="d-flex row justify-content-evenly mb-5">
+                    <div className="d-flex row justify-content-evenly">
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>
                     </div>
-                    <div className="d-flex row justify-content-evenly mb-5">
+                    <div className="d-flex row justify-content-evenly">
                         <ListCard/>
                         <ListCard/>
                         <ListCard/>

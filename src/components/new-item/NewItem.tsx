@@ -211,7 +211,7 @@ export const NewItem: React.FC = (props) => {
                     <h4 className="fw-bold mb-5">Summary</h4>
 
                     <div className="summary-content d-flex">
-                        <div>
+                        <div className="overflow-auto">
                             <div className="mb-5">
                                 <h5 className="fw-bold">Listing</h5>
                                 Lorem ipsum dolor sit amet, consectetuer adipscing elit.

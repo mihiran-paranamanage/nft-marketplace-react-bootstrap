@@ -10,4 +10,8 @@
     opacity: 1;
     height: 1px;
   }
+
+  @media (max-width: 768px) {
+    width: 60%;
+  }
 }

@@ -23,10 +23,10 @@ export const MyCollections: React.FC = (props) => {
                 <FontAwesomeIcon className="ms-2" icon={faAngleRight} />
             </button>
 
-            <div className="body px-5">
+            <div className="body">
                 <h3 className="fw-bold mb-5">My Collections</h3>
                 <div className="list">
-                    <div className="d-flex row justify-content-evenly mb-5">
+                    <div className="d-flex row justify-content-evenly">
                         <CollectionCard/>
                         <CollectionCard/>
                         <NewCollectionCard/>

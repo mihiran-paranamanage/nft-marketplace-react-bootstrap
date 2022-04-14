@@ -22,24 +22,26 @@ export const CollectionTable: React.FC = (props) => {
 
     return (
         <div className="collection-table">
-            <div className="d-flex mb-3 align-items-center">
+            <div className="filter-group d-flex mb-3">
                 <h3 className="fw-bold me-4">Filter by</h3>
-                <FilterSelect options={periodFilter}/>
-                <FilterSelect options={categoryFilter}/>
-                <FilterSelect options={chainFilter}/>
+                <div className="filters d-flex">
+                    <FilterSelect options={periodFilter}/>
+                    <FilterSelect options={categoryFilter}/>
+                    <FilterSelect options={chainFilter}/>
+                </div>
             </div>
 
             <Table responsive>
                 <thead>
                 <tr className="text-muted">
-                    <th className="fw-bold">#</th>
-                    <th className="fw-bold">Collection</th>
-                    <th className="fw-bold">Volume</th>
-                    <th className="fw-bold">24h%</th>
-                    <th className="fw-bold">7d%</th>
-                    <th className="fw-bold">Floor Price</th>
-                    <th className="fw-bold">Owners</th>
-                    <th className="fw-bold">Items</th>
+                    <th className="fw-bold mw-20">#</th>
+                    <th className="fw-bold mw-200">Collection</th>
+                    <th className="fw-bold mw-80">Volume</th>
+                    <th className="fw-bold mw-80">24h%</th>
+                    <th className="fw-bold mw-80">7d%</th>
+                    <th className="fw-bold mw-80">Floor Price</th>
+                    <th className="fw-bold mw-80">Owners</th>
+                    <th className="fw-bold mw-80">Items</th>
                 </tr>
                 </thead>
                 <tbody>

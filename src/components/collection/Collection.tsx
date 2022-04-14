@@ -45,10 +45,12 @@ export const Collection: React.FC = (props) => {
 
     return (
         <div className="collection">
-            <div className="collection-details d-flex">
-                <img className="img-lg" src={require('../../assets/nft-sample.png')} alt="Logo"/>
-                <div className="w-50 ms-auto">
-                    <div className="w-50">
+            <div className="collection-details row">
+                <div className="col-12 col-lg-6 text-center">
+                    <img className="img-lg w-100" src={require('../../assets/nft-sample.png')} alt="Logo"/>
+                </div>
+                <div className="col-12 col-lg-6">
+                    <div className="w-50 mw-300 mx-auto">
                         <h3 className="font-light-blue fw-bold">Collection Name</h3>
                         <h3 className="fw-bold">NFT Name</h3>
                         <p>
@@ -90,7 +92,7 @@ export const Collection: React.FC = (props) => {
 
             <div className="collection-stats">
                 <div className="row mb-2">
-                    <div className="col-6 d-flex flex-column justify-content-between">
+                    <div className="col-12 col-lg-6 d-flex flex-column justify-content-between">
                         <div className="properties mb-3">
                             <Card body className="px-3 py-5">
                                 <h5 className="mb-5 fw-bold">Properties</h5>
@@ -141,7 +143,7 @@ export const Collection: React.FC = (props) => {
                             </Card>
                         </div>
                     </div>
-                    <div className="col-6 d-flex flex-column justify-content-between">
+                    <div className="col-12 col-lg-6 d-flex flex-column justify-content-between">
                         <div className="price-graph mb-3">
                             <Card body className="p-3">
                                 <div className="d-flex mb-3">
@@ -301,7 +303,7 @@ export const Collection: React.FC = (props) => {
 
             <div className="more">
                 <h3 className="fw-bold">More from this collection</h3>
-                <div className="d-flex row justify-content-evenly mb-5">
+                <div className="more-collections d-flex justify-content-evenly mb-5">
                     <ListCard/>
                     <ListCard/>
                     <ListCard/>
