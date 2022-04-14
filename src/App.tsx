@@ -11,7 +11,7 @@ import {Footer} from './components/shared/footer/Footer';
 
 export const App: React.FC = () => {
   return (
-      <BrowserRouter>
+      <BrowserRouter basename="/nft-marketplace-react-bootstrap">
         <AppContextProvider>
           <NavBar/>
           <Layout>
