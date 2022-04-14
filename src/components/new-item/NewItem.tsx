@@ -25,7 +25,7 @@ export const NewItem: React.FC = (props) => {
     }
 
     return (
-        <div className="new-item">
+        <div className="new-item w-75 mx-auto">
             <h2 className="fw-bold">Create a new item</h2>
             <div className="fw-bold">Image, video, audio or 3D model</div>
             <div>
