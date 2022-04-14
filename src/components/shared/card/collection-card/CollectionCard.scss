@@ -1,8 +1,8 @@
 @import './src/styles/colors';
 
 .collection-card {
-  width: 24rem;
-  height: 30rem;
+  max-width: 24rem;
+  max-height: 30rem;
   border-radius: 1rem;
   padding: 1px;
   box-shadow: 0 0 2rem #cdc8c8;

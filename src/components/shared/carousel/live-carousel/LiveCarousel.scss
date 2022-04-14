@@ -1,6 +1,8 @@
 @import '../../../../styles/colors';
 
 .live-carousel {
+  min-width: 60rem;
+
   img {
     width: 100%;
     max-height: 60rem;
@@ -16,5 +18,11 @@
     padding: 1rem;
     border-radius: 3rem;
     border: 3px solid white;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-caption {
+      bottom: 10%;
+    }
   }
 }
