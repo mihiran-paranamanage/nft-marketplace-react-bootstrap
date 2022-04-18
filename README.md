@@ -1,6 +1,6 @@
 # NFT Marketplace Website with React.js
 
-This responsive web application is developed for a NFT marketplace using HTML, CSS, React.js and React-Bootsrap.
+This responsive web application is developed for a NFT marketplace using HTML, CSS, React.js and React-Bootstrap.
 
 ### Languages & Tools
 * HTML
