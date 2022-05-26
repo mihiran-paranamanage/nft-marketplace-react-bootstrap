@@ -36,6 +36,10 @@
     background-position: bottom;
     background-size: 100%;
     color: white;
+
+    img {
+      width: 100%;
+    }
   }
 
   .join-section {
@@ -78,6 +82,7 @@
     }
 
     .waitlist-form {
+      display: flex;
       width: 75%;
 
       .input-form {
@@ -92,6 +97,10 @@
           height: 38px;
         }
       }
+    }
+
+    img {
+      width: 100%;
     }
   }
 
@@ -108,6 +117,19 @@
     .join-section .primary-btn,
     .unlock-section .primary-btn {
       width: 80% !important;
+    }
+
+    .waitlist-form {
+      display: block !important;
+
+      .input-form {
+        width: 100% !important;
+        margin-bottom: 12px;
+      }
+    }
+
+    img {
+      width: 100%;
     }
   }
 }

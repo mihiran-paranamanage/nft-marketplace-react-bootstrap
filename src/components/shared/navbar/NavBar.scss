@@ -16,7 +16,12 @@
   }
 
   .search {
-    min-width: 30%;
+    display: flex;
+    min-width: 40%;
+  }
+
+  .search-icon {
+    display: none;
   }
 
   .nav-link {
@@ -32,9 +37,17 @@
   }
 
   @media (max-width: 768px) {
-    .navbar-brand {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+    .search {
+      display: none;
+    }
+
+    .search-icon {
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      right: 5.5rem;
+      top: 24px;
     }
 
     #navbarScroll {

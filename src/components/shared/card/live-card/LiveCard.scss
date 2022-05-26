@@ -23,4 +23,10 @@
       padding-right: 2rem;
     }
   }
+
+  @media (max-width: 768px) {
+    .ghost-btn {
+      width: 100% !important;
+    }
+  }
 }

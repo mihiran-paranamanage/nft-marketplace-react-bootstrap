@@ -191,7 +191,7 @@ export const LandingPage: React.FC = (props) => {
                         sail! Join our waitlist to get early access to exclusive drops as soon as we
                         set sail!
                     </p>
-                    <div className="d-flex waitlist-form justify-content-between">
+                    <div className="waitlist-form justify-content-between">
                         <Form className="input-form">
                             <Form.Group controlId="email">
                                 <Form.Control className="input" type="email" placeholder="Your email address" />

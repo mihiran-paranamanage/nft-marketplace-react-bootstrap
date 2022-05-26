@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container, Navbar, Nav, Form} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import {BsSearch} from 'react-icons/bs';
 
 import './NavBar.scss';
 
@@ -17,10 +18,11 @@ export const NavBar: React.FC = () => {
                             <img src={require('../../../assets/navbar-logo.png')} alt="Logo"/>
                         </Link>
                     </Navbar.Brand>
-                    <Form className="search d-flex mx-md-5">
+                    <Form className="search mx-md-5">
                         <SearchInput placeholder="Search for items, collections, creators..." />
                     </Form>
                 </div>
+                <BsSearch className="search-icon"/>
                 <Navbar.Toggle className="ms-auto" aria-controls="navbarScroll" />
                 <div className="ms-auto w-100">
                     <Navbar.Collapse id="navbarScroll">
