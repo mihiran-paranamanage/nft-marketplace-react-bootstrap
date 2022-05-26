@@ -83,12 +83,7 @@
     .collection-stats {
       padding: 6rem 1rem;
 
-      .properties,
-      .about,
-      .details,
       .price-graph,
-      .listings,
-      .offers,
       .activity {
         overflow-y: scroll;
 
@@ -109,6 +104,26 @@
           margin-left: auto;
           margin-right: auto;
           margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1452px) {
+    .more {
+      .more-collections {
+        .list-card:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1154px) {
+    .more {
+      .more-collections {
+        .list-card:nth-child(-n + 1) {
+          display: none;
         }
       }
     }

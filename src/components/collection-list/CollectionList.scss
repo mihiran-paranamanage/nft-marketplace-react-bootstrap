@@ -52,4 +52,24 @@
       left: 1rem;
     }
   }
+
+  @media (max-width: 1350px) {
+    .list {
+      .row {
+        .list-card:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1048px) {
+    .list {
+      .row {
+        .list-card:nth-child(-n + 1) {
+          display: none;
+        }
+      }
+    }
+  }
 }

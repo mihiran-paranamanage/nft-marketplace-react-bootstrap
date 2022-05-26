@@ -225,9 +225,9 @@ export const NewItem: React.FC = (props) => {
                             <div className="mb-5">
                                 <h5 className="fw-bold">Fees</h5>
                                 Lorem ipsum dolor sit amet, consectetuer adipscing elit.<br/>
-                                To NFT Fisher.........................................................................1%
+                                To NFT Fisher..........................................................1%
                                 <p>
-                                <span className="fw-bold">Total</span>.........................................................................................1%
+                                <span className="fw-bold">Total</span>...........................................................................1%
                                 </p>
                             </div>
                         </div>

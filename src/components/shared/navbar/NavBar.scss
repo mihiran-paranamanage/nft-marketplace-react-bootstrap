@@ -49,7 +49,9 @@
       right: 5.5rem;
       top: 24px;
     }
+  }
 
+  @media (max-width: 991px) {
     #navbarScroll {
       background-color: $light-gray;
 

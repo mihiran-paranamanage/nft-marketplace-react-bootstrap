@@ -112,7 +112,7 @@ export const Collection: React.FC = (props) => {
                             <Card body className="px-3 py-5">
                                 <h5 className="mb-5 fw-bold">About this collection</h5>
                                 <div className="d-flex">
-                                    <Card.Img className="card-img-md me-2" variant="top" src={require('../../assets/nft-sample.png')} alt="img" />
+                                    <Card.Img className="card-img-md me-2 h-100" variant="top" src={require('../../assets/nft-sample.png')} alt="img" />
                                     <div className="w-50 mx-auto">
                                         <p>
                                             Join our waitlist to get early access to

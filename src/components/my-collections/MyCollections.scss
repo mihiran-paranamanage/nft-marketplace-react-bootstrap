@@ -35,4 +35,24 @@
       left: 1rem;
     }
   }
+
+  @media (max-width: 1230px) {
+    .list {
+      .row {
+        .collection-card:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 842px) {
+    .list {
+      .row {
+        .collection-card:nth-child(1) {
+          display: none;
+        }
+      }
+    }
+  }
 }
