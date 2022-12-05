@@ -5,6 +5,7 @@ This responsive web application is developed for a NFT marketplace using HTML, C
 ### Languages & Tools
 * HTML
 * CSS with SCSS
+* TypeScript
 * React.js with react hooks (useState, useContext)
 * React-Bootsrap for Cards, Carousels, Tables, Navbar and Dropdowns
 * React-Select used for select inputs which have react components as options
